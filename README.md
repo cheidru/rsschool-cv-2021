@@ -1,1 +1,0 @@
-https://cheidru.github.io/rsschool-cv/
