@@ -1,2 +1,1 @@
-# rsschool-cv
-RSSchool CV test
+https://cheidru.github.io/rsschool-cv/
