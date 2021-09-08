@@ -1,6 +1,6 @@
 # Igor Checheurov
 
-## Front-End developer  
+## Front-End Development Student  
 
 ### Contacts:
 e-mail: chei@yandex.ru  
