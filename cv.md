@@ -37,7 +37,7 @@ It's just an example from a Kotlin programming book
 ```
 
 ### IT education
-* RS School. Курс JS/Frontend-разработка. Подготовительный этап
+* RS School. JS/FE Pre-School
 * Stepik Summer Java School online course
 
 ### Language skills
