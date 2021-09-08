@@ -1,1 +1,1 @@
-https://cheidru.github.io/rsschool-cv/cv.md
+https://cheidru.github.io/rsschool-cv/cv
