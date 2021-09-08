@@ -37,7 +37,8 @@ It's just an example from a Kotlin programming book
 ```
 
 ### IT education
-Stepik Summer Java School online course
+* RS School. Курс JS/Frontend-разработка. Подготовительный этап
+* Stepik Summer Java School online course
 
 ### Language skills
 English C1+, worked in an international company
