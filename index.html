@@ -9,47 +9,54 @@
     <div class="cvbody">
         <header>
             <div class="cvheader">
-                <img src="RocketRaccoon.jpg" alt="Igor Checheurov avatar">
-                <h1>Igor Checheurov</h1>
-                <h2>Front-End Development Student</h2>
+                <div class="cvhead_info">
+                    <h1>Igor Checheurov</h1>
+                    <h2>Front-End Development Student</h2>
+                    <ul>                        
+                        <li>
+                            <img src="/img/mail_ico_white.png" alt="Email Icon" width="30" height="30">
+                            <p>chei@yandex.ru</p>                       
+                        </li>
+                        <li>
+                            <img src="/img/phon_ico_white.png" alt="Email Icon" width="30" height="30">
+                            <p>+7 (916) 364-1962</p> 
+                        </li>
+                    </ul>
+                </div>
+                <img src="/img/portrait.jpg" alt="Igor Checheurov photo" class="cvphoto">
             </div>
         </header>
 
         <main>
-            <section>
-                <h3>Contacts</h3>
-                <ul>
-                    <li>e-mail: chei@yandex.ru</li>
-                    <li>mobile: +7 (916) 364-1962</li>
-                </ul>
-            </section>
+            <div class="cvmain">
+                <section>
+                    <h3>About myself</h3>
+                    <p>I've been interested in computers and programming fot many years. 
+                        I worked as programmer for a short period. But it was long ago.</p>
+                    <p>Last years I've been working for a Swedish manufacturing company as an engineering manager.
+                        In this role, I was also responsible for different programs as administrator and key user. 
+                        Unfortunately, the company closed its production unit in Russia. And now I have time to contribute 
+                        to my favourite area - programming.</p>
+                    <p>As to my <b>major traits</b>, I'm balanced and responsible. And I like to learn new things.</p>
+                </section>
 
-            <section>
-                <h3>About myself</h3>
-                <p>I've been interested in computers and programming fot many years. 
-                    I worked as programmer for a short period. But it was long ago.</p>
-                <p>Last years I've been working for a Swedish manufacturing company as an engineering manager.
-                    In this role, I was also responsible for different programs as administrator and key user. 
-                    Unfortunately, the company closed its production unit in Russia. And have time more time to contribute 
-                    to my favourite area - programming.</p>
-                <p>As to my <b>major traits</b>, I'm balanced and responsible. And I like to learn new things.</p>
-            </section>
+                <section>
+                    <h3>Programming Skills</h3>
+                    <ul>
+                        <li>JavaScript - basic</li>
+                        <li>CSS - basic</li>                       
+                        <li>HTML - basic</li>
+                        <li>Kotlin - basic</li>
+                        <li>Java - basic</li>
+                        <li>SQL - basic</li>
+                    </ul>
+                </section>
 
-            <section>
-                <h3>Programming Skills</h3>
-                <ul>
-                    <li>Kotlin - basic</li>
-                    <li>Java - basic</li>
-                    <li>CSS - basic</li>
-                    <li>SQL - basic</li>
-                </ul>
-            </section>
-
-            <section>
-                <h3>Code snippet</h3>
-                <p>It's just an example from a Kotlin programming book</p>
-                <pre>
-                    <code>
+                <section>
+                    <h3>Code snippet</h3>
+                    <p>It's just an example from a Kotlin programming book</p>
+                    <pre>
+                        <code>
     class Player(_name: String, var healthPoints: Int, val isBlessed: Boolean, private val isImmortal: Boolean) {
         var name = _name 
             get() = field.capitalize()
@@ -59,30 +66,35 @@
 
             constructor(name: String) : this(name, healthPoints = 100, isBlessed = true, isImmortal = false) 
     }
-                    </code>           
-                </pre>
-            </section>
+                        </code>           
+                    </pre>
+                </section>
 
-            <section>
-                <h3>IT education</h3>
-                <p>Stepik Summer Java School online course</p>
-            </section>
+                <section>
+                    <h3>IT education</h3>
+                    <ul>
+                        <li>Stepik Summer Java School online course</li>
+                        <li>RSSchool JS/FE Pre-School</li>
+                    </ul>
+                </section>
 
-            <section>
-                <h3>Language skills</h3>
-                <p>English C1+, worked in an international company</p>
-            </section>            
+                <section>
+                    <h3>Language skills</h3>
+                    <p>English C1+</p>
+                </section>
+            </div>            
         </main>
 
         <footer>
-            <hr>
-            <figure style="float: left; margin: 0 0 1rem 0;">
-                <img style="width: 30%;" src="rs_school_js.svg" alt="RS School logo">         
-                <figcaption><a href="https://rs.school/index.html">RS School official site</a></figcaption>
-            </figure>
-            <a href="https://github.com/cheidru/rsschool-cv.git" style="text-align: center;">My RS School repository on GitHub</a>
-            <br/>
-            <p style="text-align: left;">&#169; 2021</p>
+            <div class="cvfooter">
+                <figure style="float: left; margin: 0 0 1rem 0;">
+                    <img style="width: 30%;" src="rs_school_js.svg" alt="RS School logo">         
+                    <figcaption><a href="https://rs.school/index.html">RS School official site</a></figcaption>
+                </figure>
+                <a href="https://github.com/cheidru/rsschool-cv.git" style="text-align: center;">My RS School repository on GitHub</a>
+                <br/>
+                <p style="text-align: left;">&#169; 2021</p>
+            </div>
         </footer>
     </div>
  
