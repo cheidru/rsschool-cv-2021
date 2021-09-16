@@ -2,31 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/prism.css">
     <title>CV, Igor Checheurov</title>
 </head>
 <body>
+
+    <script src="./js/prism.js"></script>
     <div class="cvbody">
         <header>
-                <div class="cvhead_info">
-                    <h1>Igor Checheurov</h1>
-                    <h2>Front-End Development Student</h2>
-                    <ul>                        
-                        <li>
-                            <img src="./img/mail_ico_white.png" alt="Email Icon" width="30" height="30">
-                            <p>chei@yandex.ru</p>                       
-                        </li>
-                        <li>
-                            <img src="./img/phon_ico_white.png" alt="Email Icon" width="30" height="30">
-                            <p>+7 (916) 364-1962</p> 
-                        </li>
+            
+            <div class="burger-menu">
+                
+                <input type="checkbox" id="checkbox" class="burger-menu-checkbox">
+                <label for="checkbox" class="burger-menu-btn">
+                    <div class="burger-menu-icon"></div>
+                </label>
+
+                <p></p><br/>
+                <p></p><br/>
+                <p></p>
+            </div>
+
+            <div class="cvhead-info">
+
+                <nav class="header-nav">
+                    <ul class="header-nav-menu">
+                        <li><a href="#about">About myself</a></li>
+                        <li><a href="#skills">Programming Skills</a></li>
+                        <li><a href="#code">Code snippet</a></li>
+                        <li><a href="#education">IT education</a></li><br/>
+                        <li><a href="#language">Language skills</a></li>
+                        <li><a href="#intro">Video introduction</a></li>
+                        <li><a href="#projects">My projects</a></li>                            
                     </ul>
-                </div>
-                <img src="./img/portrait.jpg" alt="Igor Checheurov photo" class="cvphoto">
+                </nav>
+                <h1>Igor Checheurov</h1>
+                <h2>Front-End Development Student</h2>
+                <ul>                        
+                    <li>
+                        <img src="./img/mail_ico_white.png" alt="Email Icon" width="30" height="30">
+                        <p>chei@yandex.ru</p>                       
+                    </li>
+                    <li>
+                        <img src="./img/phon_ico_white.png" alt="Email Icon" width="30" height="30">
+                        <p>+7 (916) 364-1962</p> 
+                    </li>
+                </ul>
+              </div>
+    
+          <img src="./img/portrait.jpg" alt="Igor Checheurov photo" class="cvphoto">
         </header>
 
         <main>
-            <section>
+            <section id="about">
                 <h3>About myself</h3>
                 <p>I've been interested in computers and programming fot many years. 
                     I worked as programmer for a short period. But it was long ago.</p>
@@ -37,7 +66,7 @@
                 <p>As to my <b>major traits</b>, I'm balanced and responsible. And I like to learn new things.</p>
             </section>
 
-            <section>
+            <section id="skills">
                 <h3>Programming Skills</h3>
                 <ul>
                     <li>JavaScript - basic</li>
@@ -49,25 +78,24 @@
                 </ul>
             </section>
 
-            <section>
+            <section id="code">
                 <h3>Code snippet</h3>
-                <p>It's just an example from a Kotlin programming book</p>
-                <pre>
-                    <code>
-    class Player(_name: String, var healthPoints: Int, val isBlessed: Boolean, private val isImmortal: Boolean) {
-        var name = _name 
-            get() = field.capitalize()
-            private set(value) { 
-                field = value.trim() 
-                } 
-
-            constructor(name: String) : this(name, healthPoints = 100, isBlessed = true, isImmortal = false) 
+                <p>This is <a href="https://www.codewars.com/kata/54ba84be607a92aa900000f1">Isograms kata</a> solution from Codewars.com</p>
+                <pre style="padding: -10px;">
+                    <code class="language-javascript">
+    function isIsogram(str){
+        let stack = str.toLowerCase().split('');
+        for (let i = 0; i < str.length; i++) {
+            let nextLetter = stack.pop();
+            if (stack.includes(nextLetter)) return false
+        }
+        return true;
     }
                   </code>           
                 </pre>
             </section>
 
-            <section>
+            <section id="education">
                 <h3>IT education</h3>
                 <ul>
                     <li>Stepik Summer Java School online course</li>
@@ -75,21 +103,29 @@
                 </ul>
             </section>
 
-            <section>
+            <section id="language">
                 <h3>Language skills</h3>
                 <p>English C1+</p>
             </section>
+
+            <section id="intro">
+                <h3>Video introduction</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/z0Fitgf_PSU"
+                 title="Video CV" frameborder="0" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen class="cv-video"></iframe>
+            </section>
+
+            <!-- TODO <section id="projects">
+                <h3>My projects</h3>
+            </section> -->
+
         </main>
 
         <footer>
-            <a href="https://rs.school/index.html">
+            <a href="https://rs.school/js/">
                 <img src="./img/rsschool.svg" alt="Rsschool link" width="73" height="26">            
             </a>
 
-            <a href="" class="youtube">
-                <img src="./img/YouTube.png" alt="YouTube link" width="50" height="50" class="ico">
-                <p style="text-align: left;">&#169; 2021</p>            
-            </a>
+            <p>&#169; 2021</p>            
 
             <a href="https://github.com/cheidru?tab=repositories" class="git">
                 <img src="./img/github.svg" alt="Github link" width="26" height="26" class="ico">
