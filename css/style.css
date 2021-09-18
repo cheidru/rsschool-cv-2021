@@ -51,6 +51,7 @@ code {
 
 header {
     display: flex;
+    width: 100%;
     background:  var(--gray-color);
     justify-content: space-between;
     height: 220px;
@@ -67,6 +68,11 @@ footer {
     align-items: center;
     padding: 0 15px;
     color: white
+}
+
+#checkbox-toggle {
+    /* Прячем чекбокс */
+    opacity: 0;
 }
 
 .cvbody {
@@ -116,6 +122,7 @@ footer {
 
 .header-nav-menu a:hover {
     text-decoration: underline;
+    color: white
 }
 
 .cvphoto {
@@ -142,22 +149,70 @@ footer {
     margin-right: 10px;
 }
 
-@media(max-width: 1024px){
-    .burger-menu {
-        position: relative;
-        width: 25px;
-        height: 12px;
-        display: block;
-        margin-left: 10px;
-        margin-top: 20px;
-    }
-    
-    .burger-menu p {
-        height: 2px;
-        width: 100%;
-        background: white;
-        margin-top: -10px;
-        margin-bottom: -5px;
+#project-ribbon {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#project-ribbon a {
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    text-align: center;
+    margin: 20px 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    color: black;
+  }
+  
+  #project-ribbon img {
+    display: block;
+    width: 190px;
+  }
+  
+  #project-ribbon p {
+    margin: 5px 0 8px;
+    font-size: 16px;
+    color: var(--second-color);
+    font-weight: bold;
+  }
+  
+
+
+/* Burger menu related styling */
+.burger-nav-menu {
+    display: block;
+    overflow: auto;
+    overflow-x: hidden;
+    /* position: fixed; */
+    visibility: hidden; 
+    top: 20; 
+    left: -100%; 
+    width: 200px; 
+    height: 160px;
+    margin: -40px 0 0 -10px;
+
+    padding: 50px 0 0 25px; 
+    list-style: none; 
+    text-align: left;
+    background-color: #1a3e57;
+    color: black;
+}
+
+.burger-nav-menu a {
+    text-decoration: none;
+}
+
+.burger-nav-menu a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 767px){
+    #checkbox-toggle {
+        /* Прячем чекбокс */
+        opacity: 0;
     }
 
     .cvbody {
@@ -170,8 +225,82 @@ footer {
     }
 
     .cvhead-info {
-        margin-top: 20px;
+        margin-top: 25px;
     }
 
+    .burger-menu {
+        position: relative;
+        width: 25px;
+        height: 12px;
+        display: block;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    
+    .burger-btn {
+        /* расположение кнопки бургера */
+        display: flex;
+        align-items: center;
+        position: fixed; 
+        top: 30px; 
+        left: 20px; 
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    /* Создаем бургер */
+    .burger-btn > span, 
+    .burger-btn > span::before, 
+    .burger-btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: white;
+    }
+ 
+    .burger-btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    
+    .burger-btn > span::after {
+        content: '';
+        top: 8px;
+    }
+
+    /* Открытие меню с превращением бургера в крестик */
+    #checkbox-toggle:checked ~ .burger-btn > span {
+        transform: rotate(45deg);
+    }
+
+    #checkbox-toggle:checked ~ .burger-btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    
+    #checkbox-toggle:checked ~ .burger-btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    
+    #checkbox-toggle:checked ~ .burger-nav-menu {
+        visibility: visible; 
+        left: 0; 
+       }
+    
+    .burger-btn > span, 
+    .burger-btn > span::before, 
+    .burger-btn > span::after { 
+        transition-duration: .25s;
+    } 
+       
+    .burger-nav-menu {       
+         transition-duration: .25s;       
+    }
+
+       
 }
 
