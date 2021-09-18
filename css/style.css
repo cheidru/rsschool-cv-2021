@@ -1,0 +1,324 @@
+:root {
+    --gray-color:#676f81;
+    --body-color:#f5f5f5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--body-color);
+  }
+
+h1 {
+    font-size: 48px;
+    margin-top: 10px;
+    margin-bottom: -16px;
+}
+
+a {
+    color: white;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    vertical-align: middle;
+    padding-left: 15px;
+    height: 2rem;
+    line-height: 2rem;;
+    width: 200px;
+    color: white;
+    background:  var(--gray-color);
+    margin-bottom: -0.5rem;
+}
+
+ul {
+    list-style-type: square;
+}
+
+main {
+    margin: 0 15px;
+}
+
+.cvbody {
+    margin: 20px auto;
+    width: 1024px;
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 18px;
+    background-color: white;
+}
+
+/* Header styling */
+
+header {
+    display: flex;
+    width: 100%;
+    background:  var(--gray-color);
+    justify-content: space-between;
+    height: 220px;
+}
+
+#checkbox-toggle {
+    /* Прячем чекбокс */
+    opacity: 0;
+}
+
+.cvhead-info {
+    flex-grow: 1;
+    color: white;
+    padding: 0.5%;
+    margin-left: -180px;
+    text-align: center;
+}
+
+.cvhead-info ul {
+    margin: 0;
+    padding: 0%;
+    list-style-type: none;
+}
+
+.cvhead-info li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.cvhead-info li img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.cvhead-info li p {
+    display: inline;
+    vertical-align: middle;
+}
+
+.cvhead-info nav {
+    margin-top: 10px;
+}
+
+.header-nav-menu a {
+    text-decoration: none;
+    color: #cad5eb
+}
+
+.header-nav-menu a:hover {
+    text-decoration: underline;
+    color: white
+}
+
+.cvphoto {
+    height: 100%;
+}
+
+/* Code sample styling */
+
+code {
+    display: block;
+    margin-top: -40px;
+    margin-bottom: -60px;
+}
+
+#code a {
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+}
+
+/* Projects styling */
+
+#project-ribbon {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 285px;
+}
+
+#project-ribbon a {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: 200px;
+    text-align: center;
+    margin: 20px 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    color: black;
+  }
+  
+  #project-ribbon img {
+    display: block;
+    width: 290px;
+  }
+  
+  #project-ribbon p {
+    margin: 5px 0 0px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  #project-ribbon .project-descr {
+    padding: 8px 8px;
+    background: #f5f2f0;
+    font-weight: 200;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+/* Footer styling */
+
+footer {
+    background:  var(--gray-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    color: white
+}
+
+.cv-video {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.git {
+    display: flex;
+    align-items: center;
+}
+
+.ico {
+    margin-right: 10px;
+}
+
+/* Burger menu related styling */
+.burger-nav-menu {
+    display: block;
+    overflow: auto;
+    overflow-x: hidden;
+    /* position: fixed; */
+    visibility: hidden; 
+    top: 20; 
+    left: -100%; 
+    width: 200px; 
+    height: 160px;
+    margin: -40px 0 0 -10px;
+
+    padding: 50px 0 0 25px; 
+    list-style: none; 
+    text-align: left;
+    background-color: #1a3e57;
+    color: black;
+}
+
+.burger-nav-menu a {
+    text-decoration: none;
+}
+
+.burger-nav-menu a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 767px){
+    .cvhead-info {
+        margin-left: 0;
+    }
+
+    #checkbox-toggle {
+        /* Прячем чекбокс */
+        opacity: 0;
+    }
+
+    .cvbody {
+        max-width: 100%;
+        min-width: 600px;
+    }
+
+    .header-nav {
+            display: none;
+    }
+
+    .cvhead-info {
+        margin-top: 25px;
+    }
+
+    .burger-menu {
+        position: relative;
+        width: 25px;
+        height: 12px;
+        display: block;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    
+    .burger-btn {
+        /* расположение кнопки бургера */
+        display: flex;
+        align-items: center;
+        position: fixed; 
+        top: 30px; 
+        left: 20px; 
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    /* Создаем бургер */
+    .burger-btn > span, 
+    .burger-btn > span::before, 
+    .burger-btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: white;
+    }
+ 
+    .burger-btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    
+    .burger-btn > span::after {
+        content: '';
+        top: 8px;
+    }
+
+    /* Открытие меню с превращением бургера в крестик */
+    #checkbox-toggle:checked ~ .burger-btn > span {
+        transform: rotate(45deg);
+    }
+
+    #checkbox-toggle:checked ~ .burger-btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    
+    #checkbox-toggle:checked ~ .burger-btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    
+    #checkbox-toggle:checked ~ .burger-nav-menu {
+        visibility: visible; 
+        left: 0; 
+    }
+    
+    .burger-btn > span, 
+    .burger-btn > span::before, 
+    .burger-btn > span::after { 
+        transition-duration: .25s;
+    } 
+       
+    .burger-nav-menu {       
+         transition-duration: .25s;       
+    }       
+}
+

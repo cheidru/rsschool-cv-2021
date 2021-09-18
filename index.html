@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/prism.css">
+    <title>CV, Igor Checheurov</title>
+</head>
+<body>
+
+    <script src="./js/prism.js"></script>
+    <div class="cvbody">
+        <header>
+            
+            <div class="burger-menu">
+                
+                <input type="checkbox" id="checkbox-toggle">
+                <label for="checkbox-toggle" class="burger-btn">
+                    <span></span>
+                </label>
+                <ul class="burger-nav-menu">
+                    <li><a href="#about">About myself</a></li>
+                    <li><a href="#skills">Programming Skills</a></li>
+                    <li><a href="#code">Code snippet</a></li>
+                    <li><a href="#education">IT education</a></li>
+                    <li><a href="#language">Language skills</a></li>
+                    <li><a href="#intro">Video introduction</a></li>
+                    <li><a href="#projects">My projects</a></li>                            
+                </ul>
+
+            </div>
+
+            <div class="cvhead-info">
+
+                <nav class="header-nav">
+                    <ul class="header-nav-menu">
+                        <li><a href="#about">About myself</a></li>
+                        <li><a href="#skills">Programming Skills</a></li>
+                        <li><a href="#code">Code snippet</a></li>
+                        <li><a href="#education">IT education</a><br/></li>
+                        <li><a href="#language">Language skills</a></li>
+                        <li><a href="#intro">Video introduction</a></li>
+                        <li><a href="#projects">My projects</a></li>                            
+                    </ul>
+                </nav>
+                <h1>Igor Checheurov</h1>
+                <h2>Front-End Development Student</h2>
+                <ul>                        
+                    <li>
+                        <img src="./img/mail_ico_white.png" alt="Email Icon" width="30" height="30">
+                        <p>chei@yandex.ru</p>                       
+                    </li>
+                    <li>
+                        <img src="./img/phon_ico_white.png" alt="Email Icon" width="30" height="30">
+                        <p>+7 (916) 364-1962</p> 
+                    </li>
+                </ul>
+              </div>
+    
+          <img src="./img/portrait.jpg" alt="Igor Checheurov photo" class="cvphoto">
+        </header>
+
+        <main>
+            <section id="about">
+                <h3>About myself</h3>
+                <p>I've been interested in computers and programming fot many years. 
+                    I worked as programmer for a short period. But it was long ago.</p>
+                 <p>Last years I've been working for a Swedish manufacturing company as an engineering manager.
+                    In this role, I was also responsible for different programs as administrator and key user. 
+                    Unfortunately, the company closed its production unit in Russia. And now I have time to contribute 
+                    to my favourite area - programming.</p>
+                <p>As to my <b>major traits</b>, I'm balanced and responsible. And I like to learn new things.</p>
+            </section>
+
+            <section id="skills">
+                <h3>Programming Skills</h3>
+                <ul>
+                    <li>JavaScript - basic</li>
+                    <li>CSS - basic</li>                       
+                    <li>HTML - basic</li>
+                    <li>Kotlin - basic</li>
+                    <li>Java - basic</li>
+                    <li>SQL - basic</li>
+                </ul>
+            </section>
+
+            <section id="code">
+                <h3>Code snippet</h3>
+                <p>This is <a href="https://www.codewars.com/kata/54ba84be607a92aa900000f1">Isograms kata</a> solution from Codewars.com</p>
+                <pre>
+                    <code class="language-javascript">
+    function isIsogram(str){
+        let stack = str.toLowerCase().split('');
+        for (let i = 0; i &lt; str.length; i++) {
+            let nextLetter = stack.pop();
+            if (stack.includes(nextLetter)) return false
+        }
+        return true;
+    }
+                  </code>           
+                </pre>
+            </section>
+
+            <section id="education">
+                <h3>IT education</h3>
+                <ul>
+                    <li>Stepik Summer Java School online course</li>
+                    <li>RSSchool JS/FE Pre-School</li>
+                </ul>
+            </section>
+
+            <section id="language">
+                <h3>Language skills</h3>
+                <p>English C1+</p>
+            </section>
+
+            <section id="intro">
+                <h3>Video introduction</h3>
+                <embed width="560" height="315" src="https://www.youtube.com/embed/z0Fitgf_PSU"
+                 title="Video CV" frameborder="0" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen class="cv-video">
+            </section>
+
+            <section id="projects">
+                <h3>My projects</h3>
+
+
+                <div id="project-ribbon">
+                    <a target="_blank" href="https://cheidru.github.io/drum-kit/" class="project-tile">
+                      <img src="./img/drum-kit-project.png" alt="Drum kit"/>
+                      <p class="roject-title">Drum kit</p>
+                      <p class="project-descr">Reproduction of <i>JavaScript30</i> training project. Play different drums by pushing a few keyboard buttons.<br/>
+                      <b>Used stack: HTML, CSS, JavaScript</b></p>
+                    </a>
+
+                    <a target="_blank" href="https://cheidru.github.io/museum-rs/" class="project-tile">
+                      <img src="./img/museum-project.png" alt="Museum"/>
+                      <p>Museum</p>
+                      <p class="project-descr">Landing page of <i>Louvre Museum</i>. RSSchool training project.<br/>
+                        <b>Used stack: HTML, CSS</b></p>
+                    </a>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <a href="https://rs.school/js/">
+                <img src="./img/rsschool.svg" alt="Rsschool link" width="73" height="26">            
+            </a>
+
+            <p>&#169; 2021</p>            
+
+            <a href="https://github.com/cheidru?tab=repositories" class="git">
+                <img src="./img/github.svg" alt="Github link" width="26" height="26" class="ico">
+                <p>Visit me on GitHub</p>
+            </a>
+        </footer>
+    </div>
+ 
+ </body>
+</html>
