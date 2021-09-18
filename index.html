@@ -37,7 +37,7 @@
                         <li><a href="#about">About myself</a></li>
                         <li><a href="#skills">Programming Skills</a></li>
                         <li><a href="#code">Code snippet</a></li>
-                        <li><a href="#education">IT education</a></li><br/>
+                        <li><a href="#education">IT education</a><br/></li>
                         <li><a href="#language">Language skills</a></li>
                         <li><a href="#intro">Video introduction</a></li>
                         <li><a href="#projects">My projects</a></li>                            
@@ -87,11 +87,11 @@
             <section id="code">
                 <h3>Code snippet</h3>
                 <p>This is <a href="https://www.codewars.com/kata/54ba84be607a92aa900000f1">Isograms kata</a> solution from Codewars.com</p>
-                <pre style="padding: -10px;">
+                <pre>
                     <code class="language-javascript">
     function isIsogram(str){
         let stack = str.toLowerCase().split('');
-        for (let i = 0; i < str.length; i++) {
+        for (let i = 0; i &lt; str.length; i++) {
             let nextLetter = stack.pop();
             if (stack.includes(nextLetter)) return false
         }
@@ -116,8 +116,8 @@
 
             <section id="intro">
                 <h3>Video introduction</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/z0Fitgf_PSU"
-                 title="Video CV" frameborder="0" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen class="cv-video"></iframe>
+                <embed width="560" height="315" src="https://www.youtube.com/embed/z0Fitgf_PSU"
+                 title="Video CV" frameborder="0" allow="autoplay; clipboard-write; encrypted-media" allowfullscreen class="cv-video">
             </section>
 
             <section id="projects">
@@ -125,50 +125,20 @@
 
 
                 <div id="project-ribbon">
-                    <a
-                      target="_blank"
-                      href="https://codepen.io/mrks77/pen/MWJxJga"
-                      class="project-tile"
-                      ><img
-                        src="https://assets.codepen.io/6168236/internal/screenshots/pens/MWJxJga.default.png?fit=cover&amp;format=auto&amp;ha=true&amp;height=540&amp;quality=75&amp;v=2&amp;version=1619443723&amp;width=960"
-                        alt="Landing Page"
-                      />
-                      <p>
-                        <span class="hide">&lt;</span>Landing Page<span class="hide"
-                          >/&gt;</span
-                        >
-                      </p></a
-                    >
-                    <a target="_blank" href="https://codepen.io/mrks77/pen/jOydLVY">
-                      <img
-                        src="https://assets.codepen.io/6168236/internal/screenshots/pens/jOydLVY.default.png?fit=cover&amp;format=auto&amp;ha=false&amp;height=540&amp;quality=75&amp;v=2&amp;version=1619301473&amp;width=960"
-                        alt="Survey Form"
-                        class="project-tile"
-                      />
-                      <p>
-                        <span class="hide">&lt;</span>Survey Form<span class="hide"
-                          >/&gt;</span
-                        >
-                      </p>
+                    <a target="_blank" href="https://cheidru.github.io/drum-kit/" class="project-tile">
+                      <img src="./img/drum-kit-project.png" alt="Drum kit"/>
+                      <p class="roject-title">Drum kit</p>
+                      <p class="project-descr">Reproduction of <i>JavaScript30</i> training project. Play different drums by pushing a few keyboard buttons.<br/>
+                      <b>Used stack: HTML, CSS, JavaScript</b></p>
                     </a>
-                    <a target="_blank" href="https://codepen.io/mrks77/pen/YzNMBoQ">
-                      <img
-                        src="https://assets.codepen.io/6168236/internal/screenshots/pens/YzNMBoQ.default.png?fit=cover&amp;format=auto&amp;ha=false&amp;height=540&amp;quality=75&amp;v=2&amp;version=1619618085&amp;width=960"
-                        alt="Doc Page"
-                        class="project-tile"
-                      />
-                      <p>
-                        <span class="hide">&lt;</span>Doc Page<span class="hide"
-                          >/&gt;</span
-                        >
-                      </p>
+
+                    <a target="_blank" href="https://cheidru.github.io/museum-rs/" class="project-tile">
+                      <img src="./img/museum-project.png" alt="Museum"/>
+                      <p>Museum</p>
+                      <p class="project-descr">Landing page of <i>Louvre Museum</i>. RSSchool training project.<br/>
+                        <b>Used stack: HTML, CSS</b></p>
                     </a>
-                  </div>
-
-
-
-
-
+                </div>
             </section>
 
         </main>
