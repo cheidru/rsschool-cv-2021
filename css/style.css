@@ -206,8 +206,6 @@ footer {
     margin-right: 10px;
 }
 
-
-
 /* Burger menu related styling */
 .burger-nav-menu {
     display: block;
@@ -240,7 +238,6 @@ footer {
     .cvhead-info {
         margin-left: 0;
     }
-
 
     #checkbox-toggle {
         /* Прячем чекбокс */
@@ -321,7 +318,7 @@ footer {
     #checkbox-toggle:checked ~ .burger-nav-menu {
         visibility: visible; 
         left: 0; 
-       }
+    }
     
     .burger-btn > span, 
     .burger-btn > span::before, 
@@ -331,8 +328,6 @@ footer {
        
     .burger-nav-menu {       
          transition-duration: .25s;       
-    }
-
-       
+    }       
 }
 
