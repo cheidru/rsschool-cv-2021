@@ -356,6 +356,7 @@ footer {
         height: 26px;
         cursor: pointer;
         z-index: 2;
+        background-color: var(--gray-color);
     }
 
     /* Создаем бургер */
