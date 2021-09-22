@@ -156,7 +156,7 @@ code {
     height: 0;
    } 
    
-.videoWrapper iframe {
+.videoWrapper embed {
     position: absolute;
     top: 0;
     left: 0;
